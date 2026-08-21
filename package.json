@@ -1,0 +1,48 @@
+{
+  "name": "halluciguard",
+  "version": "0.1.0",
+  "description": "Post-hoc hallucination detection and grounding checks for LLM outputs.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "check": "tsc --noEmit"
+  },
+  "keywords": [
+    "llm",
+    "hallucination",
+    "fact-checking",
+    "rag",
+    "grounding",
+    "ai-evaluation",
+    "typescript"
+  ],
+  "author": "zuoanCo",
+  "license": "MIT",
+  "peerDependencies": {
+    "openai": ">=4.0.0",
+    "@anthropic-ai/sdk": ">=0.20.0"
+  },
+  "peerDependenciesMeta": {
+    "openai": { "optional": true },
+    "@anthropic-ai/sdk": { "optional": true }
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.120.0",
+    "openai": "^7.5.0",
+    "tsup": "^8.0.0",
+    "typescript": "~5.3.3",
+    "vitest": "^2.1.0"
+  }
+}
