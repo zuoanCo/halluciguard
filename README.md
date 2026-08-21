@@ -2,6 +2,8 @@
 
 [中文文档](README.zh.md)
 
+![halluciguard — post-hoc grounding and citation checks](docs/assets/hero.png)
+
 Post-hoc hallucination detection for LLM outputs. `halluciguard` does not change how you call a model; it evaluates the response afterward with consistency sampling, claim-level grounding, and citation verification, then fuses the signals into a trust score.
 
 > Status: beta. Detectors are unit-tested with mock providers; calibrate thresholds with your own model, domain, and risk tolerance before production use.

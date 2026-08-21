@@ -2,6 +2,8 @@
 
 [English](README.md)
 
+![halluciguard：输出后做一致性、依据和引用校验](docs/assets/hero.png)
+
 LLM 输出幻觉检测库。`halluciguard` 不改变你调用模型的方式，只在输出后做检测：自一致性采样、claim 级 grounding、引用验证，最后融合成信任分。
 
 > 状态：beta。检测器已用 mock provider 单测覆盖；生产前请用真实模型、业务领域和风险阈值做标定。
