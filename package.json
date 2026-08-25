@@ -30,6 +30,9 @@
   ],
   "author": "zuoanCo",
   "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/zuoanCo/halluciguard.git" },
+  "homepage": "https://halluciguard.zkhi.top",
+  "bugs": "https://github.com/zuoanCo/halluciguard/issues",
   "peerDependencies": {
     "openai": ">=4.0.0",
     "@anthropic-ai/sdk": ">=0.20.0"
